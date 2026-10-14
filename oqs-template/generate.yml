@@ -1586,3 +1586,1046 @@ sigs:
                     'pretty_name': 'ECDSA p521',
                     'oid': '1.3.9999.11.5.20',
                     'code_point': '0xffbc'}]
+
+# Append this block at the END of oqs-template/generate.yml
+# Experimental local research OIDs. Not standards assignments.
+# Code points are unique values currently free in this branch's TLS private-use range.
+# TLS remains disabled for these variants in this milestone.
+  -
+    family: 'FAEST'
+    variants:
+      -
+        name: 'faest_128s_ref'
+        pretty_name: 'FAEST-128s-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_128s_ref'
+        oid: '1.3.9999.30.1'
+        code_point: '0xfe01'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_128s_avx2'
+        pretty_name: 'FAEST-128s-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_128s_avx2'
+        oid: '1.3.9999.30.2'
+        code_point: '0xfe02'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_128f_ref'
+        pretty_name: 'FAEST-128f-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_128f_ref'
+        oid: '1.3.9999.30.3'
+        code_point: '0xfe03'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_128f_avx2'
+        pretty_name: 'FAEST-128f-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_128f_avx2'
+        oid: '1.3.9999.30.4'
+        code_point: '0xfe04'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_192s_ref'
+        pretty_name: 'FAEST-192s-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_192s_ref'
+        oid: '1.3.9999.30.5'
+        code_point: '0xfe05'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_192s_avx2'
+        pretty_name: 'FAEST-192s-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_192s_avx2'
+        oid: '1.3.9999.30.6'
+        code_point: '0xfe06'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_192f_ref'
+        pretty_name: 'FAEST-192f-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_192f_ref'
+        oid: '1.3.9999.30.7'
+        code_point: '0xfe07'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_192f_avx2'
+        pretty_name: 'FAEST-192f-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_192f_avx2'
+        oid: '1.3.9999.30.8'
+        code_point: '0xfe08'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_256s_ref'
+        pretty_name: 'FAEST-256s-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_256s_ref'
+        oid: '1.3.9999.30.9'
+        code_point: '0xfe09'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_256s_avx2'
+        pretty_name: 'FAEST-256s-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_256s_avx2'
+        oid: '1.3.9999.30.10'
+        code_point: '0xfe0a'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_256f_ref'
+        pretty_name: 'FAEST-256f-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_256f_ref'
+        oid: '1.3.9999.30.11'
+        code_point: '0xfe0c'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_256f_avx2'
+        pretty_name: 'FAEST-256f-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_256f_avx2'
+        oid: '1.3.9999.30.12'
+        code_point: '0xfe0d'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_128s_ref'
+        pretty_name: 'FAEST-EM-128s-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_em_128s_ref'
+        oid: '1.3.9999.30.13'
+        code_point: '0xfe0f'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_128s_avx2'
+        pretty_name: 'FAEST-EM-128s-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_em_128s_avx2'
+        oid: '1.3.9999.30.14'
+        code_point: '0xfe10'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_128f_ref'
+        pretty_name: 'FAEST-EM-128f-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_em_128f_ref'
+        oid: '1.3.9999.30.15'
+        code_point: '0xfe11'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_128f_avx2'
+        pretty_name: 'FAEST-EM-128f-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_em_128f_avx2'
+        oid: '1.3.9999.30.16'
+        code_point: '0xfe12'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_192s_ref'
+        pretty_name: 'FAEST-EM-192s-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_em_192s_ref'
+        oid: '1.3.9999.30.17'
+        code_point: '0xfe13'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_192s_avx2'
+        pretty_name: 'FAEST-EM-192s-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_em_192s_avx2'
+        oid: '1.3.9999.30.18'
+        code_point: '0xfe14'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_192f_ref'
+        pretty_name: 'FAEST-EM-192f-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_em_192f_ref'
+        oid: '1.3.9999.30.19'
+        code_point: '0xfe15'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_192f_avx2'
+        pretty_name: 'FAEST-EM-192f-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_em_192f_avx2'
+        oid: '1.3.9999.30.20'
+        code_point: '0xfe16'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_256s_ref'
+        pretty_name: 'FAEST-EM-256s-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_em_256s_ref'
+        oid: '1.3.9999.30.21'
+        code_point: '0xfe17'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_256s_avx2'
+        pretty_name: 'FAEST-EM-256s-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_em_256s_avx2'
+        oid: '1.3.9999.30.22'
+        code_point: '0xfe18'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_256f_ref'
+        pretty_name: 'FAEST-EM-256f-REF'
+        oqs_meth: 'OQS_SIG_alg_faest_em_256f_ref'
+        oid: '1.3.9999.30.23'
+        code_point: '0xfe19'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'faest_em_256f_avx2'
+        pretty_name: 'FAEST-EM-256f-AVX2'
+        oqs_meth: 'OQS_SIG_alg_faest_em_256f_avx2'
+        oid: '1.3.9999.30.24'
+        code_point: '0xfe1a'
+        enable: true
+        enable_tls: false
+        mix_with: []
+  -
+    family: 'QR-UOV'
+    variants:
+      -
+        name: 'qruov_1q7l10_aes_ref'
+        pretty_name: 'QR-UOV-1Q7L10-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q7l10_aes_ref'
+        oid: '1.3.9999.31.1'
+        code_point: '0xfe1b'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q7l10_aes_avx2'
+        pretty_name: 'QR-UOV-1Q7L10-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q7l10_aes_avx2'
+        oid: '1.3.9999.31.2'
+        code_point: '0xfe1c'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q7l10_shake_ref'
+        pretty_name: 'QR-UOV-1Q7L10-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q7l10_shake_ref'
+        oid: '1.3.9999.31.3'
+        code_point: '0xfe1d'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q7l10_shake_avx2'
+        pretty_name: 'QR-UOV-1Q7L10-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q7l10_shake_avx2'
+        oid: '1.3.9999.31.4'
+        code_point: '0xfe1e'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q7l10_aes_ref'
+        pretty_name: 'QR-UOV-3Q7L10-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q7l10_aes_ref'
+        oid: '1.3.9999.31.5'
+        code_point: '0xfe1f'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q7l10_aes_avx2'
+        pretty_name: 'QR-UOV-3Q7L10-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q7l10_aes_avx2'
+        oid: '1.3.9999.31.6'
+        code_point: '0xfe20'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q7l10_shake_ref'
+        pretty_name: 'QR-UOV-3Q7L10-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q7l10_shake_ref'
+        oid: '1.3.9999.31.7'
+        code_point: '0xfe21'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q7l10_shake_avx2'
+        pretty_name: 'QR-UOV-3Q7L10-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q7l10_shake_avx2'
+        oid: '1.3.9999.31.8'
+        code_point: '0xfe22'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q7l10_aes_ref'
+        pretty_name: 'QR-UOV-5Q7L10-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q7l10_aes_ref'
+        oid: '1.3.9999.31.9'
+        code_point: '0xfe23'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q7l10_aes_avx2'
+        pretty_name: 'QR-UOV-5Q7L10-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q7l10_aes_avx2'
+        oid: '1.3.9999.31.10'
+        code_point: '0xfe24'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q7l10_shake_ref'
+        pretty_name: 'QR-UOV-5Q7L10-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q7l10_shake_ref'
+        oid: '1.3.9999.31.11'
+        code_point: '0xfe25'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q7l10_shake_avx2'
+        pretty_name: 'QR-UOV-5Q7L10-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q7l10_shake_avx2'
+        oid: '1.3.9999.31.12'
+        code_point: '0xfe26'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q31l3_aes_ref'
+        pretty_name: 'QR-UOV-1Q31L3-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q31l3_aes_ref'
+        oid: '1.3.9999.31.13'
+        code_point: '0xfe27'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q31l3_aes_avx2'
+        pretty_name: 'QR-UOV-1Q31L3-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q31l3_aes_avx2'
+        oid: '1.3.9999.31.14'
+        code_point: '0xfe28'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q31l3_shake_ref'
+        pretty_name: 'QR-UOV-1Q31L3-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q31l3_shake_ref'
+        oid: '1.3.9999.31.15'
+        code_point: '0xfe29'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q31l3_shake_avx2'
+        pretty_name: 'QR-UOV-1Q31L3-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q31l3_shake_avx2'
+        oid: '1.3.9999.31.16'
+        code_point: '0xfe2a'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q31l3_aes_ref'
+        pretty_name: 'QR-UOV-3Q31L3-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q31l3_aes_ref'
+        oid: '1.3.9999.31.17'
+        code_point: '0xfe2b'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q31l3_aes_avx2'
+        pretty_name: 'QR-UOV-3Q31L3-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q31l3_aes_avx2'
+        oid: '1.3.9999.31.18'
+        code_point: '0xfe2c'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q31l3_shake_ref'
+        pretty_name: 'QR-UOV-3Q31L3-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q31l3_shake_ref'
+        oid: '1.3.9999.31.19'
+        code_point: '0xfe2d'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q31l3_shake_avx2'
+        pretty_name: 'QR-UOV-3Q31L3-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q31l3_shake_avx2'
+        oid: '1.3.9999.31.20'
+        code_point: '0xfe2e'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q31l3_aes_ref'
+        pretty_name: 'QR-UOV-5Q31L3-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q31l3_aes_ref'
+        oid: '1.3.9999.31.21'
+        code_point: '0xfe2f'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q31l3_aes_avx2'
+        pretty_name: 'QR-UOV-5Q31L3-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q31l3_aes_avx2'
+        oid: '1.3.9999.31.22'
+        code_point: '0xfe30'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q31l3_shake_ref'
+        pretty_name: 'QR-UOV-5Q31L3-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q31l3_shake_ref'
+        oid: '1.3.9999.31.23'
+        code_point: '0xfe31'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q31l3_shake_avx2'
+        pretty_name: 'QR-UOV-5Q31L3-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q31l3_shake_avx2'
+        oid: '1.3.9999.31.24'
+        code_point: '0xfe32'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q31l10_aes_ref'
+        pretty_name: 'QR-UOV-1Q31L10-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q31l10_aes_ref'
+        oid: '1.3.9999.31.25'
+        code_point: '0xfe33'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q31l10_aes_avx2'
+        pretty_name: 'QR-UOV-1Q31L10-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q31l10_aes_avx2'
+        oid: '1.3.9999.31.26'
+        code_point: '0xfe34'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q31l10_shake_ref'
+        pretty_name: 'QR-UOV-1Q31L10-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q31l10_shake_ref'
+        oid: '1.3.9999.31.27'
+        code_point: '0xfe35'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q31l10_shake_avx2'
+        pretty_name: 'QR-UOV-1Q31L10-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q31l10_shake_avx2'
+        oid: '1.3.9999.31.28'
+        code_point: '0xfe36'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q31l10_aes_ref'
+        pretty_name: 'QR-UOV-3Q31L10-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q31l10_aes_ref'
+        oid: '1.3.9999.31.29'
+        code_point: '0xfe37'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q31l10_aes_avx2'
+        pretty_name: 'QR-UOV-3Q31L10-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q31l10_aes_avx2'
+        oid: '1.3.9999.31.30'
+        code_point: '0xfe38'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q31l10_shake_ref'
+        pretty_name: 'QR-UOV-3Q31L10-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q31l10_shake_ref'
+        oid: '1.3.9999.31.31'
+        code_point: '0xfe39'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q31l10_shake_avx2'
+        pretty_name: 'QR-UOV-3Q31L10-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q31l10_shake_avx2'
+        oid: '1.3.9999.31.32'
+        code_point: '0xfe3a'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q31l10_aes_ref'
+        pretty_name: 'QR-UOV-5Q31L10-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q31l10_aes_ref'
+        oid: '1.3.9999.31.33'
+        code_point: '0xfe3b'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q31l10_aes_avx2'
+        pretty_name: 'QR-UOV-5Q31L10-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q31l10_aes_avx2'
+        oid: '1.3.9999.31.34'
+        code_point: '0xfe3c'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q31l10_shake_ref'
+        pretty_name: 'QR-UOV-5Q31L10-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q31l10_shake_ref'
+        oid: '1.3.9999.31.35'
+        code_point: '0xfe3d'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q31l10_shake_avx2'
+        pretty_name: 'QR-UOV-5Q31L10-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q31l10_shake_avx2'
+        oid: '1.3.9999.31.36'
+        code_point: '0xfe3e'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q127l3_aes_ref'
+        pretty_name: 'QR-UOV-1Q127L3-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q127l3_aes_ref'
+        oid: '1.3.9999.31.37'
+        code_point: '0xfe3f'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q127l3_aes_avx2'
+        pretty_name: 'QR-UOV-1Q127L3-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q127l3_aes_avx2'
+        oid: '1.3.9999.31.38'
+        code_point: '0xfe40'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q127l3_shake_ref'
+        pretty_name: 'QR-UOV-1Q127L3-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q127l3_shake_ref'
+        oid: '1.3.9999.31.39'
+        code_point: '0xfe41'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q127l3_shake_avx2'
+        pretty_name: 'QR-UOV-1Q127L3-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q127l3_shake_avx2'
+        oid: '1.3.9999.31.40'
+        code_point: '0xfe42'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q127l3_aes_ref'
+        pretty_name: 'QR-UOV-3Q127L3-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q127l3_aes_ref'
+        oid: '1.3.9999.31.41'
+        code_point: '0xfe43'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q127l3_aes_avx2'
+        pretty_name: 'QR-UOV-3Q127L3-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q127l3_aes_avx2'
+        oid: '1.3.9999.31.42'
+        code_point: '0xfe44'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q127l3_shake_ref'
+        pretty_name: 'QR-UOV-3Q127L3-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q127l3_shake_ref'
+        oid: '1.3.9999.31.43'
+        code_point: '0xfe45'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q127l3_shake_avx2'
+        pretty_name: 'QR-UOV-3Q127L3-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q127l3_shake_avx2'
+        oid: '1.3.9999.31.44'
+        code_point: '0xfe46'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q127l3_aes_ref'
+        pretty_name: 'QR-UOV-5Q127L3-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q127l3_aes_ref'
+        oid: '1.3.9999.31.45'
+        code_point: '0xfe47'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q127l3_aes_avx2'
+        pretty_name: 'QR-UOV-5Q127L3-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q127l3_aes_avx2'
+        oid: '1.3.9999.31.46'
+        code_point: '0xfe48'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q127l3_shake_ref'
+        pretty_name: 'QR-UOV-5Q127L3-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q127l3_shake_ref'
+        oid: '1.3.9999.31.47'
+        code_point: '0xfe49'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q127l3_shake_avx2'
+        pretty_name: 'QR-UOV-5Q127L3-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q127l3_shake_avx2'
+        oid: '1.3.9999.31.48'
+        code_point: '0xfe4a'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q127l10_aes_ref'
+        pretty_name: 'QR-UOV-1Q127L10-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q127l10_aes_ref'
+        oid: '1.3.9999.31.49'
+        code_point: '0xfe4b'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q127l10_aes_avx2'
+        pretty_name: 'QR-UOV-1Q127L10-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q127l10_aes_avx2'
+        oid: '1.3.9999.31.50'
+        code_point: '0xfe4c'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q127l10_shake_ref'
+        pretty_name: 'QR-UOV-1Q127L10-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q127l10_shake_ref'
+        oid: '1.3.9999.31.51'
+        code_point: '0xfe4d'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_1q127l10_shake_avx2'
+        pretty_name: 'QR-UOV-1Q127L10-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_1q127l10_shake_avx2'
+        oid: '1.3.9999.31.52'
+        code_point: '0xfe4e'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q127l10_aes_ref'
+        pretty_name: 'QR-UOV-3Q127L10-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q127l10_aes_ref'
+        oid: '1.3.9999.31.53'
+        code_point: '0xfe4f'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q127l10_aes_avx2'
+        pretty_name: 'QR-UOV-3Q127L10-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q127l10_aes_avx2'
+        oid: '1.3.9999.31.54'
+        code_point: '0xfe50'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q127l10_shake_ref'
+        pretty_name: 'QR-UOV-3Q127L10-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q127l10_shake_ref'
+        oid: '1.3.9999.31.55'
+        code_point: '0xfe51'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_3q127l10_shake_avx2'
+        pretty_name: 'QR-UOV-3Q127L10-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_3q127l10_shake_avx2'
+        oid: '1.3.9999.31.56'
+        code_point: '0xfe52'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q127l10_aes_ref'
+        pretty_name: 'QR-UOV-5Q127L10-AES-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q127l10_aes_ref'
+        oid: '1.3.9999.31.57'
+        code_point: '0xfe53'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q127l10_aes_avx2'
+        pretty_name: 'QR-UOV-5Q127L10-AES-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q127l10_aes_avx2'
+        oid: '1.3.9999.31.58'
+        code_point: '0xfe54'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q127l10_shake_ref'
+        pretty_name: 'QR-UOV-5Q127L10-SHAKE-REF'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q127l10_shake_ref'
+        oid: '1.3.9999.31.59'
+        code_point: '0xfe55'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'qruov_5q127l10_shake_avx2'
+        pretty_name: 'QR-UOV-5Q127L10-SHAKE-AVX2'
+        oqs_meth: 'OQS_SIG_alg_qruov_5q127l10_shake_avx2'
+        oid: '1.3.9999.31.60'
+        code_point: '0xfe56'
+        enable: true
+        enable_tls: false
+        mix_with: []
+  -
+    family: 'SDitH'
+    variants:
+      -
+        name: 'sdith_cat1_fast_cipherpow_opt'
+        pretty_name: 'SDitH-CAT1-FAST-CIPHERPOW-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat1_fast_cipherpow_opt'
+        oid: '1.3.9999.32.1'
+        code_point: '0xfe57'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat1_fast_cipherpow_ref'
+        pretty_name: 'SDitH-CAT1-FAST-CIPHERPOW-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat1_fast_cipherpow_ref'
+        oid: '1.3.9999.32.2'
+        code_point: '0xfe58'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat1_fast_opt'
+        pretty_name: 'SDitH-CAT1-FAST-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat1_fast_opt'
+        oid: '1.3.9999.32.3'
+        code_point: '0xfe59'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat1_fast_ref'
+        pretty_name: 'SDitH-CAT1-FAST-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat1_fast_ref'
+        oid: '1.3.9999.32.4'
+        code_point: '0xfe5a'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat1_short_cipherpow_opt'
+        pretty_name: 'SDitH-CAT1-SHORT-CIPHERPOW-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat1_short_cipherpow_opt'
+        oid: '1.3.9999.32.5'
+        code_point: '0xfe5b'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat1_short_cipherpow_ref'
+        pretty_name: 'SDitH-CAT1-SHORT-CIPHERPOW-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat1_short_cipherpow_ref'
+        oid: '1.3.9999.32.6'
+        code_point: '0xfe5c'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat1_short_opt'
+        pretty_name: 'SDitH-CAT1-SHORT-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat1_short_opt'
+        oid: '1.3.9999.32.7'
+        code_point: '0xfe5d'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat1_short_ref'
+        pretty_name: 'SDitH-CAT1-SHORT-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat1_short_ref'
+        oid: '1.3.9999.32.8'
+        code_point: '0xfe5e'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat3_fast_cipherpow_opt'
+        pretty_name: 'SDitH-CAT3-FAST-CIPHERPOW-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat3_fast_cipherpow_opt'
+        oid: '1.3.9999.32.9'
+        code_point: '0xfe5f'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat3_fast_cipherpow_ref'
+        pretty_name: 'SDitH-CAT3-FAST-CIPHERPOW-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat3_fast_cipherpow_ref'
+        oid: '1.3.9999.32.10'
+        code_point: '0xfe60'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat3_fast_opt'
+        pretty_name: 'SDitH-CAT3-FAST-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat3_fast_opt'
+        oid: '1.3.9999.32.11'
+        code_point: '0xfe61'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat3_fast_ref'
+        pretty_name: 'SDitH-CAT3-FAST-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat3_fast_ref'
+        oid: '1.3.9999.32.12'
+        code_point: '0xfe62'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat3_short_cipherpow_opt'
+        pretty_name: 'SDitH-CAT3-SHORT-CIPHERPOW-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat3_short_cipherpow_opt'
+        oid: '1.3.9999.32.13'
+        code_point: '0xfe63'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat3_short_cipherpow_ref'
+        pretty_name: 'SDitH-CAT3-SHORT-CIPHERPOW-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat3_short_cipherpow_ref'
+        oid: '1.3.9999.32.14'
+        code_point: '0xfe64'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat3_short_opt'
+        pretty_name: 'SDitH-CAT3-SHORT-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat3_short_opt'
+        oid: '1.3.9999.32.15'
+        code_point: '0xfe65'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat3_short_ref'
+        pretty_name: 'SDitH-CAT3-SHORT-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat3_short_ref'
+        oid: '1.3.9999.32.16'
+        code_point: '0xfe66'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat5_fast_cipherpow_opt'
+        pretty_name: 'SDitH-CAT5-FAST-CIPHERPOW-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat5_fast_cipherpow_opt'
+        oid: '1.3.9999.32.17'
+        code_point: '0xfe67'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat5_fast_cipherpow_ref'
+        pretty_name: 'SDitH-CAT5-FAST-CIPHERPOW-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat5_fast_cipherpow_ref'
+        oid: '1.3.9999.32.18'
+        code_point: '0xfe68'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat5_fast_opt'
+        pretty_name: 'SDitH-CAT5-FAST-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat5_fast_opt'
+        oid: '1.3.9999.32.19'
+        code_point: '0xfe69'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat5_fast_ref'
+        pretty_name: 'SDitH-CAT5-FAST-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat5_fast_ref'
+        oid: '1.3.9999.32.20'
+        code_point: '0xfe6a'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat5_short_cipherpow_opt'
+        pretty_name: 'SDitH-CAT5-SHORT-CIPHERPOW-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat5_short_cipherpow_opt'
+        oid: '1.3.9999.32.21'
+        code_point: '0xfe6b'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat5_short_cipherpow_ref'
+        pretty_name: 'SDitH-CAT5-SHORT-CIPHERPOW-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat5_short_cipherpow_ref'
+        oid: '1.3.9999.32.22'
+        code_point: '0xfe6c'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat5_short_opt'
+        pretty_name: 'SDitH-CAT5-SHORT-OPT'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat5_short_opt'
+        oid: '1.3.9999.32.23'
+        code_point: '0xfe6d'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sdith_cat5_short_ref'
+        pretty_name: 'SDitH-CAT5-SHORT-REF'
+        oqs_meth: 'OQS_SIG_alg_sdith_cat5_short_ref'
+        oid: '1.3.9999.32.24'
+        code_point: '0xfe6e'
+        enable: true
+        enable_tls: false
+        mix_with: []
+  -
+    family: 'SQIsign'
+    variants:
+      -
+        name: 'sqisign_p324_3_ref'
+        pretty_name: 'SQIsign-p324-3-REF'
+        oqs_meth: 'OQS_SIG_alg_sqisign_p324_3_ref'
+        oid: '1.3.9999.33.1'
+        code_point: '0xfe6f'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sqisign_p324_3_broadwell'
+        pretty_name: 'SQIsign-p324-3-BROADWELL'
+        oqs_meth: 'OQS_SIG_alg_sqisign_p324_3_broadwell'
+        oid: '1.3.9999.33.2'
+        code_point: '0xfe70'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sqisign_p500_27_ref'
+        pretty_name: 'SQIsign-p500-27-REF'
+        oqs_meth: 'OQS_SIG_alg_sqisign_p500_27_ref'
+        oid: '1.3.9999.33.3'
+        code_point: '0xfe71'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sqisign_p500_27_broadwell'
+        pretty_name: 'SQIsign-p500-27-BROADWELL'
+        oqs_meth: 'OQS_SIG_alg_sqisign_p500_27_broadwell'
+        oid: '1.3.9999.33.4'
+        code_point: '0xfe72'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sqisign_p664_17_ref'
+        pretty_name: 'SQIsign-p664-17-REF'
+        oqs_meth: 'OQS_SIG_alg_sqisign_p664_17_ref'
+        oid: '1.3.9999.33.5'
+        code_point: '0xfe73'
+        enable: true
+        enable_tls: false
+        mix_with: []
+      -
+        name: 'sqisign_p664_17_broadwell'
+        pretty_name: 'SQIsign-p664-17-BROADWELL'
+        oqs_meth: 'OQS_SIG_alg_sqisign_p664_17_broadwell'
+        oid: '1.3.9999.33.6'
+        code_point: '0xfe74'
+        enable: true
+        enable_tls: false
+        mix_with: []
